@@ -2,7 +2,6 @@ create database ecommerce;
 use ecommerce;
 
 create table cliente (
-	id_cliente bigint unsigned primary key auto_increment,
     nome varchar(100),
     endereco varchar(255),
     email varchar(255),
@@ -10,23 +9,27 @@ create table cliente (
     dt_nascimento date
 );
 
-create table itens (
-    qtd bigint unsigned,
-    valor_unidade decimal(5, 2),
-    valor_total decimal (6,2)
+create table produto (
+    nome_produto varchar(100),
+    preco decimal(5,2),
+    descricao varchar(500),
+    qtd_estoque int unsigned,
+    primary key (nome_produto, preco, descricao, qtd_estoque)
 );
 
 create table pedido (
-	id_pedido bigint unsigned primary key auto_increment,
+	id_pedido bigint unsigned auto_increment,
     dt_compra date,
     valor_total decimal (6, 2),
-    dt_entrega date
+    dt_entrega date,
+    primary key (id_pedido, valor_total)
 );
 
-create table produto (
-	id_produto bigint unsigned primary key auto_increment,
-    nome varchar(100),
-    preco decimal(5,2),
-    descricao varchar(500),
-    qtd_estoque int unsigned
+create table itens (
+    qtd_estoque bigint unsigned,
+    preco decimal(5, 2),
+    valor_total decimal (6,2),
+    
+    foreign key(preco, qtd_estoque) references produto(preco, qtd_estoque),
+    foreign key(valor_total) references pedido(valor_total)
 );

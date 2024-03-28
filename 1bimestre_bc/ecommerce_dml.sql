@@ -49,13 +49,13 @@ values (1, 1, 5, 2.50, 12.50),
 (3, 5, 2, 20.00, 40.00),
 (4, 3, 1, 30.00, 30.00);
 
-UPDATE Cliente SET celular = '(11) 88888-1111' WHERE id_cliente = 1;
-UPDATE Produto SET quantidade_estoque = 120 WHERE id_produto = 1;
-UPDATE Pedido SET valor_total = 139.97 WHERE numero_pedido = 1;
-UPDATE ItemPedido SET quantidade = 3 WHERE id_item = 5;
+UPDATE cliente SET celular = '(81) 37238-1213' WHERE id_cliente = 1;
+UPDATE produto SET qtd_estoque = 90 WHERE id_produto = 2;
+UPDATE pedido SET valor_total = 259.07 WHERE numero_pedido = 3;
+UPDATE itens SET qtd_estoque = 9 WHERE id_item = 4;
 
-DELETE FROM Cliente WHERE id_cliente = 10;
-DELETE FROM Produto WHERE id_produto = 9;
+DELETE FROM cliente WHERE id_cliente = 10;
+DELETE FROM produto WHERE id_produto = 9;
 
 select * from cliente;
 select * from produto;

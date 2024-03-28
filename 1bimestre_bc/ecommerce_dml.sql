@@ -51,7 +51,7 @@ values (1, 1, 5, 2.50, 12.50),
 
 UPDATE cliente SET celular = '(81) 37238-1213' WHERE id_cliente = 1;
 UPDATE produto SET qtd_estoque = 90 WHERE id_produto = 2;
-UPDATE pedido SET valor_total = 259.07 WHERE numero_pedido = 3;
+UPDATE pedido SET valor_total = 259.07 WHERE id_pedido = 3;
 UPDATE itens SET qtd_estoque = 9 WHERE id_item = 4;
 
 DELETE FROM cliente WHERE id_cliente = 10;

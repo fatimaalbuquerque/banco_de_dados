@@ -5,12 +5,12 @@ values('Fabricia Albuquerque', 'Avenida das Flores, 190', 'bissa223albuquerque@l
 	('Humberto Cavalcanti', 'Indanhatuba 90', 'betinho@habboo.com', '11992876301', '1960-10-04'),
 	('Rambo Reboques', 'Rambo Reboques 78', 'ramboreboques@ramboreboques', '81973614562', '1990-12-09'),
 	('Tilambuques Tilápia', 'Tilambuco 88', 'tutilambes@gmail.com', '81902556794', '2005-09-09'),
-	('João Silva', 'Rua das Flores, 123', 'joaosilva@example.com', '91234567891', '1985-02-15'),
-	('Maria Oliveira', 'Avenida da Liberdade, 456', 'maria.oliveira@example.com', '92345678912', '1990-07-03'),
-	('Ana Costa', 'Praça do Comércio, 789', 'ana.costa@example.com', '94567891234', '1978-04-09'),
-	('Pedro Santos', 'Rua dos Cedros, 1011', 'pedrosantos@example.com', '93456789123', '1982-11-21'),
-	('Carlos Pereira', 'Travessa das Palmeiras, 1213', 'carlospereira@example.com', '95678912345','1995-09-27'),
-	('Sofia Fernandes', 'Largo dos Girassóis, 1415', 'sofia.fernandes@example.com', '96789123456', '1989-06-12');
+	('João Papei', 'Rua Papei, 123', 'joaosilvapapei@papei.com', '91234567891', '1985-02-15'),
+	('Maria Gasolina', 'Avenida Liberdade, 456', 'maria.etanol@petrobras.com', '92345678912', '1990-07-03'),
+	('Nadei de Costa', 'Praça Picinal, 789', 'ana.costinha@aguadoce.com', '94567891234', '1978-04-09'),
+	('Pedro Santanas', 'Rua dos Santanas, 1011', 'pedrosantossantanado@silvinha.com', '93456789123', '1982-11-21'),
+	('Carlos Magno', 'Travessa das Magnólias, 1213', 'sorvetemagno@kibom.com', '95678912345','1995-09-27'),
+	('Sofia Sofás', 'Largo da Marabrás, 1415', 'sofiaconfortavel@bumbumdenenem.com', '96789123456', '1989-06-12');
 
 
 insert into produto (nome_produto, preco, descricao, qtd_estoque)

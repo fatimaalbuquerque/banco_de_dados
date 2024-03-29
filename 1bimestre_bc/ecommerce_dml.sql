@@ -10,7 +10,8 @@ values('Fabricia Albuquerque', 'Avenida das Flores, 190', 'bissa223albuquerque@l
 	('Nadei de Costa', 'Praça Picinal, 789', 'ana.costinha@aguadoce.com', '94567891234', '1978-04-09'),
 	('Pedro Santanas', 'Rua dos Santanas, 1011', 'pedrosantossantanado@silvinha.com', '93456789123', '1982-11-21'),
 	('Carlos Magno', 'Travessa das Magnólias, 1213', 'sorvetemagno@kibom.com', '95678912345','1995-09-27'),
-	('Sofia Sofás', 'Largo da Marabrás, 1415', 'sofiaconfortavel@bumbumdenenem.com', '96789123456', '1989-06-12');
+	('Sofia Sofás', 'Largo da Marabrás, 1415', 'sofiaconfortavel@bumbumdenenem.com', '96789123456', '1989-06-12'),
+    	('Testezinho', 'Testinha Amola Facão, 123', 'sotestandoavida@ciencia', '11111111', '2024-03-28');
 
 
 insert into produto (nome_produto, preco, descricao, qtd_estoque)
@@ -39,22 +40,22 @@ values('Caneta esferográfica', 2.5, 'Caneta esferográfica preta, ponta média,
  
 insert into itens (id_pedido, id_produto, qtd_estoque, preco,valor_total)
 values (1, 1, 5, 2.50, 12.50),
-(1, 2, 3, 10.00, 30.00),
-(2, 3, 1, 30.00, 30.00),
-(3, 4, 2, 50.00, 100.00),
-(1, 5, 4, 20.00, 80.00),
-(2, 3, 1, 30.00, 30.00),
-(1, 2, 5, 10.00, 50.00),
-(2, 1, 3, 2.50, 7.50),
-(3, 5, 2, 20.00, 40.00),
-(4, 3, 1, 30.00, 30.00);
+	(1, 2, 3, 10.00, 30.00),
+	(2, 3, 1, 30.00, 30.00),
+	(3, 4, 2, 50.00, 100.00),
+	(1, 5, 4, 20.00, 80.00),
+	(2, 3, 1, 30.00, 30.00),
+	(1, 2, 5, 10.00, 50.00),
+	(2, 1, 3, 2.50, 7.50),
+	(3, 5, 2, 20.00, 40.00),
+	(4, 3, 1, 30.00, 30.00);
 
 UPDATE cliente SET celular = '(81) 37238-1213' WHERE id_cliente = 1;
 UPDATE produto SET qtd_estoque = 90 WHERE id_produto = 2;
 UPDATE pedido SET valor_total = 259.07 WHERE id_pedido = 3;
 UPDATE itens SET qtd_estoque = 9 WHERE id_item = 4;
 
-DELETE FROM cliente WHERE id_cliente = 10;
+DELETE FROM cliente WHERE id_cliente = 11;
 DELETE FROM produto WHERE id_produto = 9;
 
 select * from cliente;
